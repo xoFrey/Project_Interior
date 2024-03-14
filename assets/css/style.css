@@ -126,13 +126,14 @@ header article p {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding: 0 10rem;
+  padding: 0 3vw;
   margin-bottom: 9rem;
 }
 
 .pics img {
   width: 36rem;
-  height: 21.4rem;
+  max-height: 21.4rem;
+  object-fit: cover;
 }
 
 /* !Section - Services */
@@ -141,8 +142,8 @@ header article p {
 .services {
   background: url(../img/services.png) no-repeat center;
   background-size: cover;
-  height: 70vh;
-  padding: 8rem 13.5rem;
+  /* height: 70vh; */
+  padding: 10vw 5vw;
 }
 
 .bg {
@@ -179,7 +180,6 @@ header article p {
 .block article {
   display: flex;
   justify-content: center;
-  padding: 0rem 15rem 0 15rem;
   gap: 3rem;
 }
 
@@ -208,7 +208,7 @@ header article p {
   text-align: center;
   color: white;
   padding: 0 3rem;
-  margin-bottom: 4.2rem;
+  padding-bottom: 4.2rem;
 }
 
 .block {
@@ -217,8 +217,11 @@ header article p {
 
 /* !From the Blog-Section */
 img {
-  width: 36rem;
+  max-width: 30vw;
   margin-bottom: 1.8rem;
+}
+.block {
+  padding: 5vw;
 }
 
 .block h3 {
