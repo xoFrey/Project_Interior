@@ -86,7 +86,7 @@ header article p {
 /* :headline class */
 
 .headline {
-  padding: 5.8rem 15rem;
+  padding: 5.8rem 10vw;
 }
 
 .headline div {
@@ -131,6 +131,9 @@ header article p {
 }
 
 .pics img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 36rem;
   max-height: 21.4rem;
   object-fit: cover;
@@ -188,7 +191,7 @@ header article p {
   flex-direction: column;
   align-items: center;
   width: 36rem;
-  height: 25rem;
+  height: auto;
 }
 
 .icon h5 {
@@ -211,16 +214,13 @@ header article p {
   padding-bottom: 4.2rem;
 }
 
-.block {
-  margin-bottom: 6.2rem;
-}
-
 /* !From the Blog-Section */
 img {
   max-width: 30vw;
   margin-bottom: 1.8rem;
 }
 .block {
+  margin-bottom: 6.2rem;
   padding: 5vw;
 }
 
@@ -316,6 +316,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 60px;
 }
 
 .testimonials div {
@@ -323,7 +324,7 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 30vw;
+  gap: 20px;
 }
 
 /* !images and text */
@@ -375,7 +376,7 @@ article .profile p:nth-of-type(2) {
   background: url(../img/contactus.png) no-repeat center;
   background-size: cover;
   height: 60vh;
-  padding: 8rem 13.5rem;
+  padding: 8rem 10vw;
 }
 
 .contact form {
@@ -394,7 +395,7 @@ textarea {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08) inset;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 30vw;
+  width: 60vw;
 }
 input {
   height: 4vh;
@@ -432,4 +433,56 @@ footer p {
   font-size: 1.4rem;
   line-height: 2rem;
   color: white;
+}
+
+/* ! Media Queries for Mobile */
+
+@media only screen and (max-width: 567px) {
+  .headline div {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .headline p {
+    text-align: center;
+  }
+  .our-services p {
+    margin-bottom: 20px;
+  }
+
+  .icon p {
+    padding: 0 2vw;
+    padding-bottom: 20px;
+  }
+
+  .block article {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .block p {
+    width: 80vw;
+  }
+
+  img {
+    max-width: 80vw;
+  }
+  .testimonials article {
+    flex-direction: column;
+  }
+  .profile {
+    width: 80vw;
+  }
+
+  article .profile p:nth-of-type(1) {
+    width: auto;
+  }
 }
